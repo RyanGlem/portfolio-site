@@ -1,0 +1,32 @@
+.carousel {
+    position: relative;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100vw;
+    top: 155px;
+    height: 600px;
+    overflow:hidden;
+    transition: ease 1s
+}
+
+.carouselSlider {
+    white-space:nowrap;
+    transition: ease 1s;
+}
+
+.slide {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    color:aqua;
+    width: 100vw;
+    height: 100vh;
+}
+
+#prev, #next {
+    border:none;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    left:45%;
+    cursor:pointer;
+}

@@ -1,0 +1,35 @@
+$imagesize: 72px;
+
+.skills-section {
+    height: 75vh;
+    width: 30vw;
+    margin: 0 auto;
+    top: 185px;
+    position:relative;
+    text-align: center;
+    justify-items: center;
+
+    .skills-header {
+        color:rgba(16, 141, 218, 1);
+        font-size: 30px;
+        font-style: bold
+    }
+}
+
+.about-section {
+    margin: auto 0;
+    position: absolute;
+    font-size: 21px;
+    width: 60%;
+    top: 150%;
+    left: 21%;
+    color: aliceblue;
+    text-align: center;
+}
+
+#skill-svg {
+    height: $imagesize;
+    width: $imagesize;
+    transition: 2s;
+    padding: 20px;
+}

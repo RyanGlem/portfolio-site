@@ -1,0 +1,63 @@
+$textcolor: rgba(16, 141, 218, 1);
+$marginsize: 59px;
+$imgsize: 128px;
+$fonttype: 'Quicksand';
+
+.header-container {
+    position: fixed;
+    z-index: 1;
+    background-color: #242424;
+    width: 100vw;
+    height: 165px;
+}
+
+.header {
+    text-align: left;
+    margin-left: $marginsize + 10;
+    margin-top : $marginsize;
+    letter-spacing: 2px;
+    color: $textcolor;
+    font: bold $marginsize $fonttype;
+
+    p {
+        font: bold italic 24px $fonttype;
+        margin-top: 0px;
+        letter-spacing: 2px;
+        color: white;
+    }
+}
+
+#gitlogo {
+    position: absolute;
+    height: $imgsize;
+    width: $imgsize;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-left: 80%;
+    border-radius: 50%;
+    transition: 1.5s ease-in-out;
+    &:hover {
+        filter: drop-shadow(0 0 45px crimson);
+    }
+}
+
+#gearsvg {
+    position:absolute;
+    margin-left: 5px;
+    margin-top: 64px;
+    transition: ease 200ms;
+
+}
+
+a {
+    text-decoration: none;
+    color:rgba(16, 141, 218, 1)
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:active {
+    color: aliceblue
+}
