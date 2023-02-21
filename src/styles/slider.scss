@@ -23,10 +23,53 @@
     height: 100vh;
 }
 
-#prev, #next {
+.slide-video {
+    position: relative;
+    height: 75vh;
+    width: 100%;
+}
+
+.vignette {
+    position:relative;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 67vw;
+    left: 250px;
+    transition: ease-in-out 1s;
+    color:whitesmoke;
+
+    .description {
+        position: relative;
+        width: 85%;
+        top: 10px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 40px;
+
+        #title {
+            font-size: 54px;
+            background: -webkit-linear-gradient(#eee, #108dda);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent
+        }
+    }
+}
+
+button {
     border:none;
     position: relative;
     background-color: rgba(0, 0, 0, 0);
-    left:45%;
     cursor:pointer;
+}
+
+#prev, #next {
+    margin: 0 auto;
+    left: 45%;
+}
+
+#expand {
+    margin: 0 auto;
+    left: 120px;
+    top: 5px;
+    z-index: 1;
 }

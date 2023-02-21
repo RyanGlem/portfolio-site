@@ -1,6 +1,5 @@
 import { Carousel } from "./carousel";
 import { Header } from "./header";
-import { Contact } from "./contact";
 import { useState, FC } from "react";
 import react_logo from "./assets/svg/react.svg";
 import mongodb_logo from "./assets/svg/MongoDBlogo.svg";
@@ -34,15 +33,6 @@ const Skills: FC<{ scroll: number }> = ({ scroll }) => {
 
 const App = () => {
   let [scrollOffset, setOffset] = useState(0);
-  let [visible, setVisible] = useState(false);
-
-  let gear = document.getElementById("gearsvg") as HTMLElement;
-
-  gear?.addEventListener("click", () => {
-    setVisible(!visible);
-    let deg = 180;
-    gear.style.transform = `rotate(${deg}deg)`;
-  });
 
   // You can access regular window, document, and eventListeners in the document
   window.addEventListener("scroll", () => {
@@ -52,22 +42,16 @@ const App = () => {
   return (
     <>
       <Header scroll={scrollOffset} />
-      {visible ? (
-        <Contact />
-      ) : (
-        <>
-          <Carousel />
-          <Skills scroll={scrollOffset} />
-          <div className="about-section">
-            Welcome, if you stumbled across this site you're either lost or
-            interested in what I do. I'm an aspiring software engineer that
-            specializes in developing web applications primarily in TypeScript,
-            NodeJS and ReactJS. I have a soft spot for animations, graphics
-            rendering, and physics engines. If you like what you see, stick
-            around. There is definitely more to come.
-          </div>
-        </>
-      )}
+      <Carousel />
+      <Skills scroll={scrollOffset} />
+      <div className="about-section">
+        Welcome, if you stumbled across this site you're either lost or
+        interested in what I do. I'm an aspiring software engineer that
+        specializes in developing web applications primarily in TypeScript,
+        NodeJS and ReactJS. I have a soft spot for animations, graphics
+        rendering, and physics engines. If you like what you see, stick around.
+        There is definitely more to come.
+      </div>
     </>
   );
 };

@@ -1,11 +1,11 @@
-$textcolor: rgba(16, 141, 218, 1);
+$textcolor: #108dda;
 $marginsize: 59px;
 $imgsize: 128px;
 $fonttype: 'Quicksand';
 
 .header-container {
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     background-color: #242424;
     width: 100vw;
     height: 165px;
@@ -45,8 +45,7 @@ $fonttype: 'Quicksand';
     position:absolute;
     margin-left: 5px;
     margin-top: 64px;
-    transition: ease 200ms;
-
+    transition: 400ms ease-in-out;
 }
 
 a {
