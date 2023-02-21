@@ -46,11 +46,11 @@ export const Carousel = () => {
   const titles = ["Tiles.io", "giphyApp", "Experimentals", " Growth Runner", "Plane War"]
   const descriptions = 
   [
-    "Color matching puzzle game where the objective is to get all tiles the same color built with Node.js, TypeScript, HMTL5, and SASS built in 8 hours.", 
-    "Creation of a web application in the same vein of Tenor in which you must enter in search terms to acquire the most popular gifs circulated on the internet. Used asynchronous methods in order to load the API data with ReactJS to dynamically displays GIFs on the page",
-    "Website made in Next.js and host on Vercel to test recursive rendering, collision detection, and SSR",
+    "Color matching puzzle game where the objective is to get all tiles the same color built with Node.js, TypeScript, HMTL5, and SASS", 
+    "Creation of a web application in the same vein of Tenor in which you must enter in search terms to acquire the most popular gifs circulated on the internet. Used asynchronous methods in order to load the API data with ReactJS to dynamically display GIFs on the page",
+    "Website made in Next.js and hosted on Vercel to test recursive rendering, collision detection, and SSR",
     "Educational Unity trivia game made in 2020 that has topics in mathematics, geography, and science",
-    "Indepdent Unity made in 2020 to test projectiles and AI controllers"
+    "Indepdent Unity game made in 2020 to test projectiles and AI controllers"
   ]
 
   // The content will be a video of the project I was working on
